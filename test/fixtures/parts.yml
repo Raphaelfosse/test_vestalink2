@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reference_part: MyString
+  reference_site: MyString
+  part_type_designation: MyString
+  site: one
+
+two:
+  reference_part: MyString
+  reference_site: MyString
+  part_type_designation: MyString
+  site: two

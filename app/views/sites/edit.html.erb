@@ -1,0 +1,28 @@
+<%= form_with model: @site, local: true do |form| %>
+  <div class="form-group">
+    <%= form.label :reference_site, class: "control-label" %>
+    <%= form.text_field :reference_site, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :address_line1, 'Adresse', class: "control-label" %>
+    <%= form.text_field :address_line1, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :nom, 'Nom', class: "control-label" %>
+    <%= form.text_field :nom, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :city, 'Ville', class: "control-label" %></br>
+    <%= form.text_field :city, class: "control-label" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :zipcode, 'Code postal', class: "control-label" %>
+    <%= form.text_field :zipcode, class: "form-control" %>
+  </div>
+
+  <%= form.submit "Modifier", class: "btn btn-primary" %>
+<% end %>
